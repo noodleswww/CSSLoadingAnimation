@@ -1,0 +1,68 @@
+
+.loading1 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #F74343;
+    width: 20px;
+    height: 20px;
+    margin-left: -40px;
+    border-radius: 50%;
+    animation: loader1 1s linear infinite alternate;
+}
+
+@keyframes loader1 {
+    0% {
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 40px 0px 0px 0px rgba(255, 255, 255, .2),
+                    80px 0px 0px 0px rgba(255, 255, 255, .2),
+                    120px 0px 0px 0px rgba(255, 255, 255, .2);
+    }
+    25% {
+        background-color: rgba(255, 255, 255, .4);
+        box-shadow: 40px 0px 0px 0px rgba(255, 255, 255,1),
+        80px 0px 0px 0px rgba(255, 255, 255, .2),
+        120px 0px 0px 0px rgba(255, 255, 255, .2);
+    }
+    75% {
+        background-color: rgba(255, 255, 255, .4);
+        box-shadow: 40px 0px 0px 0px rgba(255, 255, 255, .2),
+        80px 0px 0px 0px rgba(255, 255, 255, 1),
+        120px 0px 0px 0px rgba(255, 255, 255, 1);
+    }
+    /*100%{
+        background-color: rgba(255, 255, 255, .4);
+        box-shadow: 40px 0px 0px 0px rgba(255, 255, 255, .2),
+        80px 0px 0px 0px rgba(255, 255, 255, .2),
+        120px 0px 0px 0px rgba(255, 255, 255, 1);
+    }*/
+}
+
+/**
+*    改变box-shadow 水平和垂直偏移的距离
+*   你可以扩展更好玩的效果
+···css
+@keyframes loader1{
+
+    0% {
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 40px 40px 0px 0px rgba(255, 255, 255, .2),
+                    80px 80px 0px 0px rgba(255, 255, 255, .2),
+                    120px 120px 0px 0px rgba(255, 255, 255, .2);
+    }
+    25% {
+        background-color: rgba(255, 255, 255, .4);
+        box-shadow: 40px 0px 0px 0px rgba(255, 255, 255,1),
+        80px 0px 0px 0px rgba(255, 255, 255, .2),
+        120px 0px 0px 0px rgba(255, 255, 255, .2);
+    }
+    75% {
+        background-color: rgba(255, 255, 255, .4);
+        box-shadow: 40px -40px 0px 0px rgba(255, 255, 255, .2),
+        80px -80px 0px 0px rgba(255, 255, 255, 1),
+        120px -120px 0px 0px rgba(255, 255, 255, 1);
+    }
+}
+···css
+**/

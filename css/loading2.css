@@ -1,0 +1,77 @@
+.loading2 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color:transparent;
+    box-shadow: 0px 0px 1px 1px #fff inset;
+}
+.loading2:before,.loading2:after{
+    height:2px;
+    position:absolute;
+    top:59px;
+    left:59px;
+    content:"";
+    background:#fff;
+}
+.loading2:before{
+    width:40px;
+    animation: hour 8s linear infinite;
+    transform-origin:1px 1px;
+}
+.loading2:after{
+    width:55px;
+    animation: minute 2s linear infinite;
+    transform-origin:1px 1px;
+}
+@keyframes hour{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+@keyframes minute{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+.ear1,.ear2{
+    width:30px;
+    height:30px;
+    position:absolute;
+    top:0;
+    box-shadow:0px 0px 0px 2px #fff inset;
+}
+.ear1{
+    left:0;
+    border-radius:50% 100%;
+    clip:rect(0px 25px 25px 0px);
+}
+.ear2{
+    left:90px;
+    border-radius:100% 50%;
+    clip:rect(0px 30px 25px 4px);
+}
+.leg1,.leg2{
+    position:absolute;
+    bottom:0;
+    width:30px;
+    height:5px;
+    box-shadow:0 0 3px 2px #fff inset;
+}
+.leg1{
+    transform:rotate(-65deg);
+}
+.leg2{
+    right:0;
+    transform:rotate(65deg);
+}
